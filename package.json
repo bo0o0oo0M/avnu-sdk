@@ -28,7 +28,7 @@
   },
   "scripts": {
     "start": "tsup --watch",
-    "build": "tsup && yarn build:esm && yarn build:iife && yarn build:dts",
+    "build": "tsup && pnpm build:esm && pnpm build:iife && pnpm build:dts",
     "build:esm": "tsup --clean false --format esm --platform node",
     "build:iife": "tsup --clean false --format iife --platform browser",
     "build:dts": "tsup --clean false --dts-only",
